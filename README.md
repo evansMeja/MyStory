@@ -59,7 +59,7 @@ next is used to contain the address of the next node n
  exists as a chunk.
  
 demo
-
+<pre>
 #include<stdio.h>
 #include<conio.h>
 #include<process.h>
@@ -90,6 +90,8 @@ printf("The data entered is %d\n",n3->data);
 printf("The data entered is %d\n",n4->data);
 return 0;
 }
+
+</pre>
  
 The above program shows we have allocated  memory spaces of
 three nodes but the problem is that they are independent.So we
