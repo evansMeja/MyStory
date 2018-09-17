@@ -92,13 +92,13 @@ return 0;
 }
 
 </pre>
- 
+
 The above program shows we have allocated  memory spaces of
 three nodes but the problem is that they are independent.So we
 have maintained each variable separately which impossible if
 there are large numbers.This can be solved if the nodes get related
 to ech other
-
+ <pre>
 #include<stdio.h>
 #include<conio.h>
 #include<process.h>
@@ -135,12 +135,13 @@ p=p->next
 }
 return 0;
 }
-
+</pre>
+<p>
 we could have done better by creating links while 
 nodes are being created.This way we could have done better
 by using one node pointer *n1.
- 
- 
+ </p>
+ <pre>
 #include<stdio.h>
 #include<conio.h>
 #include<process.h>
@@ -176,7 +177,7 @@ p=p->next
 getch();
 return 0;
 }
- 
+ </pre>
  
 INSERTION INTO A LINKED LIST
 ---------------------------
@@ -196,7 +197,7 @@ INSERTION INTO A LINKED LIST
  -if head is null then the node you are inserting is the first node
  
  
- 
+ <pre>
  /*c code for insertion of a node into a single linked list at the front*/
  
  void ins_begi(sNODE *head,int item){
@@ -216,9 +217,12 @@ INSERTION INTO A LINKED LIST
  }
  }
  
- 
+ </pre>
+ <p>
  /* c code for insertion of a node into a single linked list at the end*/
+ </p>
  
+ <pre>
  void ins_end(sNODE **head,int x){
  sNODE *nw,*q;
  q=*head;
@@ -238,9 +242,12 @@ INSERTION INTO A LINKED LIST
  }
  }
  }
- 
+ </pre>
+ <p>
   /* c code for insertion of a node after a specified node*/
+  </p>
   
+  <pre>
   void ins_any(){
   sNODE *nw,*q+;
   int pos,c,y;
@@ -249,7 +256,7 @@ INSERTION INTO A LINKED LIST
   
   //creation of new node which is pointed by pointer
   }
- 
+ </pre>
  
  
  
